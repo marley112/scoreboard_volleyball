@@ -35,7 +35,7 @@ var pointHome = document.getElementsByClassName("point-home");
 pointHome[0].addEventListener('click', setPoint, false);
 var pointAway = document.getElementsByClassName("point-away");
 pointAway[0].addEventListener('click', setPoint, false);
-var pointToSet = 11;
+var pointToSet = 25;
 var setToWin = 3;
 var currSet = 1;
 
