@@ -1,0 +1,191 @@
+@import 'colors';
+
+@font-face {
+    font-family: "led";
+    src: url("/fonts/led_real.ttf");
+}
+
+@font-face {
+    font-family: "segment14";
+    src: url("/fonts/Segment14.otf");
+}
+
+body {
+    font-family: "segment14", sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page {
+    //    height: 100vh;
+    background-color: $bg;
+}
+
+.section {
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.teams-time,
+.points,
+.sets {
+    color: $teams;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+
+.team-field,
+.point,
+.set {
+    width: 28%;
+    background-color: $black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.time {
+    width: 38%;
+    text-align: center;
+    background-color: $black;
+    border: 5px solid $white;
+    border-radius: 15px;
+    font-size: 70px;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+        .time__player {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+
+.text-sep {
+    font-family: 'Lato', sans-serif;
+}
+
+.point {
+    width: 20%;
+    &:first-child {
+        margin-left: 4%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &:last-child {
+        margin-right: 4%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    border: 5px solid $white;
+    border-radius: 15px;
+    font-size: 90px;
+    padding: 5px 10px 5px 20px;
+    color: $points;
+    cursor: pointer;
+}
+
+.service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    .active {
+        color: yellow;
+    }
+    color: $white;
+    font-family: 'Lato',
+    sans-serif;
+}
+
+.sets__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    color: $white;
+}
+
+.set {
+    width: 10%;
+    &:first-child {
+        margin-left: 14%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &:last-child {
+        margin-right: 14%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    border: 5px solid $white;
+    border-radius: 15px;
+    font-size: 90px;
+    padding: 5px 10px 5px 20px;
+}
+
+.scores {
+    border-top: 5px solid $white;
+    margin-top: 15px;
+}
+
+.score {
+    width: 23%;
+}
+
+.set-number {
+    font-family: 'Lato', sans-serif;
+    color: $white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.set-score {
+    color: $points;
+    background-color: $black;
+    text-align: center;
+    font-size: 60px;
+}
+
+.team-edit {
+    cursor: pointer;
+}
+
+.time__player {
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s linear;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 60px;
+    .time__control {
+        padding: 0 10px 10px 10px;
+        cursor: pointer;
+        transition: .5s all ease;
+        &:hover {
+            color: $points;
+        }
+    }
+}
+
+//.time__play, .time__pause {
+//    display: none;
+//    .acive {
+//        display: inline-block !important;
+//    }
+//}

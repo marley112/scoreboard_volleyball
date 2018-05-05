@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn t work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+    <div id="page" class="page">
+        <div id="teams-time" class="teams-time section">
+            <div class="team-field team-home team-edit" data-team-type="home" data-toggle="tooltip" data-placement="top" title="Kliknij, aby zmienić nazwę">Home</div>
+            <div class="time"><span class="time__hour">00</span><span class="text-sep">:</span><span class="time__minutes">00</span><span class="text-sep">:</span><span class="time__seconds">00</span>
+                <div class="time__player">
+                    <div class="time__play"><span class="far fa-play-circle time__control" data-toggle="tooltip" data-placement="bottom" title="Rozpocznij / wznów mecz"></span></div>
+                    <div class="time__stop"><span class="far fa-stop-circle time__control" data-toggle="tooltip" data-placement="bottom" title="Zakończ mecz"></span></div>
+                </div>
+            </div>
+            <div class="team-field team-away team-edit" data-team-type="away" data-toggle="tooltip" data-placement="top" title="Kliknij, aby zmienić nazwę">Away</div>
+        </div>
+        <div id="points" class="points section">
+            <div class="point point-home" data-toggle="tooltip" data-placement="bottom" title="Kliknij, aby dodać punkt">00</div>
+            <div class="service"><span class="fas fa-arrow-left service__arrow service__arrow-left active"></span><span class="service__text">Serwis</span><span class="fas fa-arrow-right service__arrow service__arrow-left"></span></div>
+            <div class="point point-away" data-toggle="tooltip" data-placement="bottom" title="Kliknij, aby dodać punkt">00</div>
+        </div>
+        <div id="sets" class="sets section">
+            <div class="set set-home">0</div>
+            <div class="sets__content"><span class="sets__text">Sety</span></div>
+            <div class="set set-away">0</div>
+        </div>
+        <div id="scores" class="scores section">
+            <div class="score">
+                <div class="set-number">1</div>
+                <div class="set-score"><span class="score__home">00</span><span class="text-sep">:</span><span class="score__away">00</span></div>
+            </div>
+            <div class="score">
+                <div class="set-number">2</div>
+                <div class="set-score"><span class="score__home">00</span><span class="text-sep">:</span><span class="score__away">00</span></div>
+            </div>
+            <div class="score">
+                <div class="set-number">3</div>
+                <div class="set-score"><span class="score__home">00</span><span class="text-sep">:</span><span class="score__away">00</span></div>
+            </div>
+            <div class="score">
+                <div class="set-number">4</div>
+                <div class="set-score"><span class="score__home">00</span><span class="text-sep">:</span><span class="score__away">00</span></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+@font-face {
+  font-family: "led";
+  src: url("/fonts/led_real.ttf"); }
+
+@font-face {
+  font-family: "segment14";
+  src: url("/fonts/Segment14.otf"); }
+
+body {
+  font-family: "segment14", sans-serif; }
+
+a:hover {
+  text-decoration: none; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.page {
+  background-color: #6f211a; }
+
+.section {
+  height: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 15px; }
+
+.teams-time,
+.points,
+.sets {
+  color: #bf9965;
+  text-transform: uppercase;
+  font-size: 60px; }
+
+.team-field,
+.point,
+.set {
+  width: 28%;
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative; }
+
+.time {
+  width: 38%;
+  text-align: center;
+  background-color: #000000;
+  border: 5px solid #ffffff;
+  border-radius: 15px;
+  font-size: 70px;
+  position: relative;
+  cursor: pointer; }
+  .time:hover .time__player {
+    visibility: visible;
+    opacity: 1; }
+
+.text-sep {
+  font-family: 'Lato', sans-serif; }
+
+.point {
+  width: 20%;
+  border: 5px solid #ffffff;
+  border-radius: 15px;
+  font-size: 90px;
+  padding: 5px 10px 5px 20px;
+  color: #ce4241;
+  cursor: pointer; }
+  .point:first-child {
+    margin-left: 4%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .point:last-child {
+    margin-right: 4%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+
+.service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+  color: #ffffff;
+  font-family: 'Lato', sans-serif; }
+  .service .active {
+    color: yellow; }
+
+.sets__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Lato', sans-serif;
+  color: #ffffff; }
+
+.set {
+  width: 10%;
+  border: 5px solid #ffffff;
+  border-radius: 15px;
+  font-size: 90px;
+  padding: 5px 10px 5px 20px; }
+  .set:first-child {
+    margin-left: 14%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .set:last-child {
+    margin-right: 14%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+
+.scores {
+  border-top: 5px solid #ffffff;
+  margin-top: 15px; }
+
+.score {
+  width: 23%; }
+
+.set-number {
+  font-family: 'Lato', sans-serif;
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center; }
+
+.set-score {
+  color: #ce4241;
+  background-color: #000000;
+  text-align: center;
+  font-size: 60px; }
+
+.team-edit {
+  cursor: pointer; }
+
+.time__player {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  font-size: 60px; }
+  .time__player .time__control {
+    padding: 0 10px 10px 10px;
+    cursor: pointer;
+    -webkit-transition: .5s all ease;
+    -o-transition: .5s all ease;
+    transition: .5s all ease; }
+    .time__player .time__control:hover {
+      color: #ce4241; }
